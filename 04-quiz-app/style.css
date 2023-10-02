@@ -47,9 +47,12 @@ body{
    cursor: pointer;
    transition: all 0.3s;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
     color:whitesmoke;
     background: rgb(98, 98, 173); 
+}
+.btn:disabled{
+    cursor: no-drop;
 }
 #next-btn{
     background:rgb(98, 98, 173);
@@ -62,4 +65,10 @@ body{
      border-radius: 4px;
      cursor: pointer;
      display: none;
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
 }
